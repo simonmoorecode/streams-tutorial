@@ -1,4 +1,4 @@
-package com.simonmoorecode.domain;
+package com.simonmoorecode.streamstutorial.domain;
 
 public enum Subject {
     MATHEMATICS,

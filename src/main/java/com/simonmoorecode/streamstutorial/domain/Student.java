@@ -1,4 +1,4 @@
-package com.simonmoorecode.domain;
+package com.simonmoorecode.streamstutorial.domain;
 
 import java.util.List;
 
