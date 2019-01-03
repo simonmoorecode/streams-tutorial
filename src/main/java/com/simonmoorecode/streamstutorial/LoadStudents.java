@@ -14,8 +14,8 @@ public class LoadStudents {
             File studentFile = new File (studentFileName);
             InputStream studentFS = new FileInputStream(studentFile);
             BufferedReader bufferedStudents = new BufferedReader(new InputStreamReader(studentFS));
-            List<Student> students = bufferedStudents.lines().map(LoadStudents::mapToStudent).collect(Collectors.toList());
-            return students;
+            return bufferedStudents.lines().map(LoadStudents::mapToStudent).collect(Collectors.toList());
+            
     }
 
     private static Student mapToStudent(String fileLine){
@@ -40,6 +40,7 @@ public class LoadStudents {
         try {
             List<Student> students = loadStudentsFromFile(studentFileName);
             students.forEach(System.out::println);
+
         } catch (IOException e) {
             e.printStackTrace();
         }

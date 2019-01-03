@@ -17,6 +17,7 @@ public class TestCalculateAverageGrade {
     }
 
     @Test
+    //Make this test pass by implementing CalculatAverageGRade.findAverageGrade.
     public void testCalculateAverageGrade(){
         Assert.assertEquals(84.25, CalculateAverageGrade.findAverageGrade(testStudents).getAsDouble(),0);
     }

@@ -17,7 +17,7 @@ public class TestFindMinStudentAge {
     }
 
     @Test
-    //TODO - make this test pass by implementing FindMinStudentAge.findMinAge
+    //Make this test pass by implementing FindMinStudentAge.findMinAge
     public void findMinAge(){
         Assert.assertEquals(19, FindMinStudentAge.findMinAge(testStudents));
     }
