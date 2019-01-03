@@ -15,7 +15,7 @@ public class LoadStudents {
             InputStream studentFS = new FileInputStream(studentFile);
             BufferedReader bufferedStudents = new BufferedReader(new InputStreamReader(studentFS));
             return bufferedStudents.lines().map(LoadStudents::mapToStudent).collect(Collectors.toList());
-            
+
     }
 
     private static Student mapToStudent(String fileLine){
@@ -37,10 +37,10 @@ public class LoadStudents {
             studentFileName="students.csv";
         }
         System.out.println ("Loading students from file");
+
         try {
             List<Student> students = loadStudentsFromFile(studentFileName);
             students.forEach(System.out::println);
-
         } catch (IOException e) {
             e.printStackTrace();
         }
