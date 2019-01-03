@@ -1,12 +1,13 @@
 package com.simonmoorecode.streamstutorial;
 
 import com.simonmoorecode.streamstutorial.domain.Student;
+import com.simonmoorecode.streamstutorial.domain.Subject;
 
 import java.util.LinkedList;
 import java.util.List;
 
 public class GetDistinctListOfSubjects {
-    List<String> getDistinctListOfSubjects(List<Student> students) {
+    public static List<Subject> getDistinctListOfSubjects(List<Student> students) {
         return new LinkedList<>();
     }
 }
