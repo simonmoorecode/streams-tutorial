@@ -3,17 +3,17 @@ Materials for a tutorial on Java Streams.
 
 This is a Maven project with a single dependency for JUNIT.
 
-#Using Tutorial
+# Using Tutorial
 
 There are 7 exercises.
 
 Each exercise is implemented as a Unit test that will load up a List of Student objects and then call a static method on a corresponding class with this List.
 
-THe Student class and supporting Enums are in the domain package.
+The Student class and supporting Enums are in the domain package.
 
-The objective is to implement the method using Java Streams API so that the unit test passes.
+The objective is to implement the method called by the unit test using Java Streams API so that the test passes.
 
-#Suggested order of exercises - Unit Tests:
+# Suggested order of exercises - Unit Tests:
 
 TestFilterStudentsByGrade
 TestGetStudentNames
